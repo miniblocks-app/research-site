@@ -3,9 +3,9 @@
 import { SectionHeading } from "@/components/ui/section-heading";
 import { DownloadCard } from "@/components/ui/download-card";
 import { motion } from "framer-motion";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-const documents = [
+// Sample download data matching the image
+const downloadItems = [
   {
     title: "Proposal Report",
     date: "25 August 2023",
@@ -23,10 +23,7 @@ const documents = [
     date: "18 March 2024",
     type: "Individual Assignment",
     id: "status-document-2"
-  }
-];
-
-const presentations = [
+  },
   {
     title: "Research Paper",
     date: "4 March 2024",
@@ -48,6 +45,16 @@ const presentations = [
 ];
 
 export function DownloadsSection() {
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+  
   return (
     <section id="downloads" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -57,40 +64,23 @@ export function DownloadsSection() {
           centered
         />
         
-        <Tabs defaultValue="documents" className="mt-12">
-          <TabsList className="grid w-full max-w-[400px] grid-cols-2 mx-auto">
-            <TabsTrigger value="documents">Documents</TabsTrigger>
-            <TabsTrigger value="presentations">Presentations</TabsTrigger>
-          </TabsList>
-          
-          <TabsContent value="documents" className="mt-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {documents.map((item) => (
-                <DownloadCard
-                  key={item.id}
-                  title={item.title}
-                  date={item.date}
-                  type={item.type}
-                  id={item.id}
-                />
-              ))}
-            </div>
-          </TabsContent>
-          
-          <TabsContent value="presentations" className="mt-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {presentations.map((item) => (
-                <DownloadCard
-                  key={item.id}
-                  title={item.title}
-                  date={item.date}
-                  type={item.type}
-                  id={item.id}
-                />
-              ))}
-            </div>
-          </TabsContent>
-        </Tabs>
+        <motion.div 
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          {downloadItems.map((item) => (
+            <DownloadCard
+              key={item.id}
+              title={item.title}
+              date={item.date}
+              type={item.type}
+              id={item.id}
+            />
+          ))}
+        </motion.div>
       </div>
     </section>
   );
