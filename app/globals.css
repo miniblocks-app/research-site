@@ -1,17 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --border:       210 16% 82%;
-  --input:        210 16% 96%;
-  --ring:         215 20% 65%;
-  --background:   0   0%  100%;
-  --foreground:   222 47%  11%;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @media (prefers-color-scheme: dark) {
   :root {
