@@ -6,8 +6,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Project Showcase',
-  description: 'A showcase of our latest project, its scope, milestones, and achievements',
+  title: 'Miniblocks Portfolio',
+  description: 'A showcase of our Research project, Miniblocks - its scope, milestones, and achievements',
 };
 
 export default function RootLayout({
