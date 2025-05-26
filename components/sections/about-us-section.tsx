@@ -97,10 +97,14 @@ export function AboutUsSection() {
             >
               <Card className="overflow-hidden h-full">
                 <div className="aspect-square overflow-hidden">
-                  <Avatar className="w-full h-full rounded-none">
-                    <AvatarImage src={member.image} alt={member.name} className="object-cover" />
-                    <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                  </Avatar>
+                        <Avatar className="w-full h-full rounded-none">
+                        <AvatarImage 
+                          src={member.image} 
+                          alt={member.name} 
+                          className={member.name === "Prof. Nuwan Kodagoda" ? "object-cover object-top" : "object-cover"} 
+                        />
+                        <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                        </Avatar>
                 </div>
                 <CardHeader className="pb-2">
                   <CardTitle className="text-xl">{member.name}</CardTitle>
