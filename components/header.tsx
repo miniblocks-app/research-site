@@ -21,12 +21,13 @@ const navItems = [
     label: 'Project Scope',
     href: '#project-scope',
     children: [
-      { label: 'Literature Survey', href: '#literature-survey' },
-      { label: 'Research Gap', href: '#research-gap' },
-      { label: 'Research Problem and Solution', href: '#research-problem' },
-      { label: 'Research Objectives', href: '#research-objectives' },
-      { label: 'Methodology', href: '#methodology' },
-      { label: 'Technologies', href: '#technologies' },
+      { label: 'Literature Review', href: '#project-scope' },
+      { label: 'Research Gap', href: '#project-scope' },
+      { label: 'Research Problem and Solution', href: '#project-scope' },
+      { label: 'Research Objectives', href: '#project-scope' },
+      { label: 'Methodology', href: '#project-scope' },
+      { label: 'Technologies', href: '#project-scope' },
+      { label: 'References', href: '#project-scope' },
     ]
   },
   { 
@@ -37,8 +38,8 @@ const navItems = [
     label: 'Downloads',
     href: '#downloads',
     children: [
-      { label: 'Documents', href: '#documents' },
-      { label: 'Presentations', href: '#presentations' },
+      { label: 'Documents', href: '#downloads' },
+      { label: 'Presentations', href: '#downloads' },
     ]
   },
   { 

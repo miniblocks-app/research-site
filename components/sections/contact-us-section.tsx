@@ -64,7 +64,7 @@ export function ContactUsSection() {
   }
   
   const contactInfo = [
-    { icon: <Mail className="h-5 w-5" />, text: "sayururehan77@gmail.com" },
+    { icon: <Mail className="h-5 w-5" />, text: "miniblocks.app@gmail.com" },
     { icon: <Phone className="h-5 w-5" />, text: "(+94) 76 852 5475" },
     { icon: <MapPin className="h-5 w-5" />, text: "Sri Lanka Institute of Information Technology (SLIIT), Malabe, Sri Lanka" },
   ];

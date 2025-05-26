@@ -9,11 +9,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const sections = {
   literatureSurvey: {
     icon: <Book className="h-5 w-5 text-blue-600 dark:text-blue-400" />,
-    title: "Literature Survey",
+    title: "Literature Review",
     description: "Comprehensive review of existing research",
     points: [
       "Block-based interfaces tend to reduce cognitive load by as much as 42% compared to text-based IDEs. Middle schoolers achieve 2.3× faster mastery of programming concepts in drag-and-drop environments like MIT App Inventor. Thunkable’s template-based lessons have led to 18% higher exam scores in high school pilot programs, and vocational institutions rely on Glide for rapid business prototype creation.This aligns with the K-12 Computer Science Framework, which emphasizes early introduction to computational thinking through accessible, visually oriented programming tools.",
-      "References: [1]	google, “Blockly: a Visual Programming Editor,” Google Developers, 2019. https://developers.google.com/blockly. [2]	“K–12 Computer Science Framework,” k12cs.org. https://k12cs.org/. [3]	J. Chen et al., “Cognitive Load in Visual Programming,” J. EdTech, 2022. [4]	“MIT App Inventor | MIT CSAIL,” Mit.edu, Apr. 29, 2019. https://www.csail.mit.edu/ research/mit-app-inventor. [5]	M. Resnick et al., “Scratch: programming for all,” Communications of the ACM, vol. 52, no. 11, pp. 60–67, 2009. [6]	M. Rodriguez, “Limits of No-Code Systems,” IEEE ACCESS, 2021. [7]	“Mobile Development Frameworks,” Gartner.com, 2024. https://www.gartner.com/reviews/market/mobile-development-frameworks. [8]	“Glide Educational Partnership Report,” 2021. [9]	“Thunkable.com: Drag and Drop Mobile App Builder for iOS and Android,” Thunkable.com: Drag and Drop Mobile App Builder for iOS and Android, 2019. https://thunkable.com/. [10]	A. Thompson, “No-Code in Vocational Education,” EduProc, 2023. [11]	PWA Performance Metrics, WebDev Quarterly, 2023. [12]	w3c_wai, “W3C Accessibility Initiative,” Web Accessibility Initiative (WAI), 2022. https://www.w3.org/WAI/. [13]	AppDev Accessibility Audit, Stanford HCI Lab, 2023.Google Developers. [14]	National Skills Coalition Survey, 2024. [15]	Introduction | LangChain (2025) Langchain.com. Available at: https://python.langchain.com/docs/introduction/#integrations [16]	Pichai, S. and Hassabis, D. (2023) Introducing Gemini: our largest and most capable AI model, Google. Google. Available at: https://blog.google/technology/ai/google-gemini-ai/."
     ]
   },
   researchGap: {
@@ -74,6 +73,29 @@ const sections = {
       "Python",
       "GCP (Google Cloud Platform)",
       "Gemini AI"
+    ]
+  },
+  references: {
+    icon: <Book className="h-5 w-5 text-cyan-600 dark:text-cyan-400" />,
+    title: "References",
+    description: "Key literature and refrences in IEEE format",
+    points: [
+      "[1]	google, “Blockly: a Visual Programming Editor,” Google Developers, 2019. https://developers.google.com/blockly.",
+      "[2]	“K–12 Computer Science Framework,” k12cs.org. https://k12cs.org/.",
+      "[3]	J. Chen et al., “Cognitive Load in Visual Programming,” J. EdTech, 2022. ",
+      "[4]	“MIT App Inventor | MIT CSAIL,” Mit.edu, Apr. 29, 2019. https://www.csail.mit.edu/ research/mit-app-inventor. ",
+      "[5]	M. Resnick et al., “Scratch: programming for all,” Communications of the ACM, vol. 52, no. 11, pp. 60–67, 2009. ",
+      "[6]	M. Rodriguez, “Limits of No-Code Systems,” IEEE ACCESS, 2021. ",
+      "[7]	“Mobile Development Frameworks,” Gartner.com, 2024. https://www.gartner.com/reviews/market/mobile-development-frameworks. ",
+      "[8]	“Glide Educational Partnership Report,” 2021. ",
+      "[9]	“Thunkable.com: Drag and Drop Mobile App Builder for iOS and Android,” Thunkable.com: Drag and Drop Mobile App Builder for iOS and Android, 2019. https://thunkable.com/. ",
+      "[10]	A. Thompson, “No-Code in Vocational Education,” EduProc, 2023. ",
+      "[11]	PWA Performance Metrics, WebDev Quarterly, 2023. ",
+      "[12]	w3c_wai, “W3C Accessibility Initiative,” Web Accessibility Initiative (WAI), 2022. https://www.w3.org/WAI/. ",
+      "[13]	AppDev Accessibility Audit, Stanford HCI Lab, 2023.Google Developers. ",
+      "[14]	National Skills Coalition Survey, 2024. ",
+      "[15]	Introduction | LangChain (2025) Langchain.com. Available at: https://python.langchain.com/docs/introduction/#integrations ",
+      "[16]	Pichai, S. and Hassabis, D. (2023) Introducing Gemini: our largest and most capable AI model, Google. Google. Available at: https://blog.google/technology/ai/google-gemini-ai/."
     ]
   }
 };
