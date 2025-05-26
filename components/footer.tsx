@@ -7,9 +7,12 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Project</h3>
+            <h3 className="text-lg font-semibold mb-4"><img src="/miniblocks logo.png" alt="Project Logo" className="h-8 w-auto" /></h3>
             <p className="text-muted-foreground">
-              Transforming ideas into reality through innovation and dedication.
+              <b>Where tiny builders dream big!</b>
+            </p>
+            <p className="text-muted-foreground mt-2">
+              Miniblocks is a blocky-based application that offers an accessible and engaging platform for children to learn mobile application development.
             </p>
           </div>
           
@@ -59,7 +62,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Project. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Miniblocks. All rights reserved.</p>
         </div>
       </div>
     </footer>
