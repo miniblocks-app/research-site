@@ -64,9 +64,9 @@ export function ContactUsSection() {
   }
   
   const contactInfo = [
-    { icon: <Mail className="h-5 w-5" />, text: "contact@project.com" },
-    { icon: <Phone className="h-5 w-5" />, text: "+1 (555) 123-4567" },
-    { icon: <MapPin className="h-5 w-5" />, text: "123 Innovation Street, Tech City" },
+    { icon: <Mail className="h-5 w-5" />, text: "sayururehan77@gmail.com" },
+    { icon: <Phone className="h-5 w-5" />, text: "(+94) 76 852 5475" },
+    { icon: <MapPin className="h-5 w-5" />, text: "Sri Lanka Institute of Information Technology (SLIIT), Malabe, Sri Lanka" },
   ];
   
   return (
@@ -184,20 +184,21 @@ export function ContactUsSection() {
                   </div>
                 ))}
               </div>
-              
+              <div className="bg-card p-6 rounded-lg shadow-sm">
+                <h3 className="text-lg font-semibold mb-3">Connect with Us</h3>
+                <p className="text-muted-foreground">
+                  Follow our project journey on social media platforms for the latest updates and announcements.
+                </p>
+              </div>
+              {/* 
               <div className="mb-12">
                 <h3 className="text-xl font-semibold mb-4">Office Hours</h3>
                 <p className="text-muted-foreground">Monday - Friday: 9:00 AM - 5:00 PM</p>
                 <p className="text-muted-foreground">Saturday - Sunday: Closed</p>
               </div>
+              */}
             </div>
-            
-            <div className="bg-card p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold mb-3">Connect with Us</h3>
-              <p className="text-muted-foreground">
-                Follow our project journey on social media platforms for the latest updates and announcements.
-              </p>
-            </div>
+      
           </motion.div>
         </div>
       </div>
