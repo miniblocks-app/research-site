@@ -23,14 +23,14 @@ export function HomeSection() {
           className="max-w-3xl"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-            Transforming Ideas Into{" "}
+            Where tiny builders{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
-              Reality
+              dream big!
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            Our innovative approach delivers groundbreaking solutions that address real-world challenges, setting new standards in the industry.
+            Miniblocks is a blocky-based application that offers an accessible and engaging platform for children to learn mobile application development.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">

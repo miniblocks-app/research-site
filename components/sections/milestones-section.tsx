@@ -7,41 +7,66 @@ import { motion } from "framer-motion";
 
 const milestones = [
   {
-    date: "Q1 2023",
+    date: "April 2024",
     title: "Project Initiation",
-    description: "Initial planning, requirement gathering, and stakeholder alignment.",
+    description: "Team formation, project scope definition, and initial planning phase.",
     status: "Completed",
   },
   {
-    date: "Q2 2023",
-    title: "Concept Development",
-    description: "Finalizing the concept, technical architecture, and approval process.",
+    date: "May 2024",
+    title: "Topic Assesment Form (TAF) Submission",
+    description: "Formal topic evaluation and approval from academic committee.",
     status: "Completed",
   },
   {
-    date: "Q3 2023",
-    title: "Prototype Development",
-    description: "Building functional prototypes and conducting initial user testing.",
+    date: "July 2024",
+    title: "Proposal Presentation",
+    description: "Initial project proposal presentation to stakeholders.",
     status: "Completed",
   },
   {
-    date: "Q4 2023",
-    title: "Validation & Testing",
-    description: "Comprehensive testing, validation, and quality assurance.",
+    date: "December 2024",
+    title: "Progress Presentation 1",
+    description: "First major milestone presentation with technical demonstrations.",
+    status: "Completed",
+  },
+  {
+    date: "March 2025",
+    title: "Progress Presentation 2",
+    description: "Second milestone review with advanced feature implementations.",
+    status: "Completed",
+  },
+  {
+    date: "March 2025",
+    title: "Research Paper Submission",
+    description: "Comprehensive research documentation and academic paper submission.",
+    status: "Completed",
+  },
+  {
+    date: "April 2025",
+    title: "Completion of Full System",
+    description: "Final system integration, testing, and optimization phase.",
+    status: "Completed",
+  },
+  {
+    date: "May 2025",
+    title: "Research Portfolio Website Launch",
+    description: "Launch of the research portfolio website showcasing project outcomes.",
+    status: "Completed",
+  },
+  {
+    date: "May 2025",
+    title: "Further Improvements & GenAI Integration",
+    description: "Enhancements based on feedback and integration of Generative AI features.",
+    status: "Completed",
+  },
+  {
+    date: "May 2025",
+    title: "Final Presentation",
+    description: "Final research presentation to stakeholders and academic committee.",
     status: "In Progress",
   },
-  {
-    date: "Q1 2024",
-    title: "Deployment Phase",
-    description: "Staged deployment, integration with existing systems, and user training.",
-    status: "Planned",
-  },
-  {
-    date: "Q2 2024",
-    title: "Evaluation & Refinement",
-    description: "Post-implementation review, feedback collection, and refinements.",
-    status: "Planned",
-  },
+
 ];
 
 export function MilestonesSection() {

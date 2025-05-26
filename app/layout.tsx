@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Project Showcase',
+  title: 'Miniblocks Research Portfolio',
   description: 'A showcase of our latest project, its scope, milestones, and achievements',
 };
 
