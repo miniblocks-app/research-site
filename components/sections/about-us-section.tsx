@@ -9,47 +9,69 @@ import Link from "next/link";
 
 const teamMembers = [
   {
-    name: "Alex Johnson",
-    role: "Project Lead",
-    bio: "Alex has over 10 years of experience leading innovative projects in the tech industry.",
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=800",
+    name: "Pasindu Dinal",
+    role: "Led the Logic Designer",
+    bio: "Pasindu has over 2 years of experience working in the industry. He is passionate about software development and has a keen interest in backend and Open Source.",
+    image: "/Dinal.jpeg",
     social: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      email: "mailto:alex@example.com"
+      linkedin: "https://www.linkedin.com/in/mrmihi/",
+      github: "https://github.com/mrmihi",
+      email: "mailto:mrmihi@gmail.com"
     }
   },
   {
-    name: "Samantha Lee",
-    role: "Lead Developer",
-    bio: "Samantha specializes in frontend development and user experience design.",
-    image: "https://images.pexels.com/photos/3586798/pexels-photo-3586798.jpeg?auto=compress&cs=tinysrgb&w=800",
+    name: "Sayuru Bopitiya",
+    role: "Led the Compilation Deployment & GenAI",
+    bio: "Sayuru has close to 4 years of experience building tech in the industry. He is passionate about Machine Learning, LLM technologies and their applications.",
+    image: "/Sayuru.png",
     social: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      email: "mailto:samantha@example.com"
+      linkedin: "https://www.linkedin.com/in/sayuru-bopitiya//",
+      github: "https://github.com/SayuruRehan",
+      email: "mailto:sayururehan77@gmail.com"
     }
   },
   {
-    name: "Michael Chen",
-    role: "Research Lead",
-    bio: "Michael brings expertise in data analysis and research methodologies to the team.",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=800",
+    name: "Thareendra Tennakoon",
+    role: "Led the UI Designer",
+    bio: "Thareendra has close to 2 years of experience in the industry. She is passionate about Frontend Development and has a keen interest in creating user-friendly interfaces.",
+    image: "/Tharee.jpeg",
     social: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      email: "mailto:michael@example.com"
+      linkedin: "https://www.linkedin.com/in/thareendra-tennakoon/",
+      github: "https://github.com/Thareendra2000",
+      email: "mailto:thareendra2000@gmail.com"
     }
   },
   {
-    name: "Priya Patel",
-    role: "UX Designer",
-    bio: "Priya ensures our projects are not only functional but also intuitive and accessible.",
-    image: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=800",
+    name: "Prof. Nuwan Kodagoda",
+    role: "Supervisor | Pro-Vice Chancellor at SLIIT",
+    bio: "Supervisor of the research project and pinoeer of the inital idea of the project. He is a leading academic in the field of software engineering and has extensive experience in guiding research projects.",
+    image: "/Nuwan1.jpg",
     social: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      email: "mailto:priya@example.com"
+      linkedin: "https://www.linkedin.com/in/nuwan-kodagoda-a4875a4/",
+      github: "#",
+      email: "mailto:nuwan.k@sliit.lk"
+    }
+  },
+  {
+    name: "Mr. Eishan Weerasinghe",
+    role: "Co-Supervisor | Assistant Lecturer at SLIIT",
+    bio: "Co-Supervisor of Miniblocks research project. He is an expert in software engineering and has a keen interest in educational technologies.",
+    image: "/Eishan.jpeg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/w-h-a-eishan-dinuka-08a2b8199/?originalSubdomain=lk",
+      github: "#",
+      email: "mailto:eishan.w@sliit.lk"
+    }
+  },
+  {
+    name: "Ms. Madhumini Gunaratne",
+    role: "Research Assistant",
+    bio: "Madhumini's support in research paper writing and her knowledge in Blockly Programming and LLMs proved to be a catalyst for the development of the project.",
+    image: "/madhuminig.jpeg",
+    social: {
+      linkedin: "https://www.linkedin.com/in/madhuminigun/",
+      github: "#",
+      email: "mailto:madhumini.g@sliit.lk"
     }
   }
 ];
@@ -59,8 +81,8 @@ export function AboutUsSection() {
     <section id="about-us" className="py-16 md:py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         <SectionHeading 
-          title="About Us" 
-          subtitle="Meet the talented team behind the project"
+          title="The Team" 
+          subtitle="Meet the talented team behind Miniblocks"
           centered
         />
         

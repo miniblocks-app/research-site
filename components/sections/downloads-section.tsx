@@ -7,44 +7,57 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const documents = [
   {
+    title: "TAF Document",
+    date: "May 2024",
+    type: "Group Assignment",
+    id: "taf-document"
+  },
+  {
     title: "Proposal Report",
-    date: "25 August 2023",
-    type: "Group Assignment",
-    id: "proposal-report"
-  },
-  {
-    title: "Status Document I",
-    date: "3 November 2023",
+    date: "July 2024",
     type: "Individual Assignment",
-    id: "status-document-1"
-  },
-  {
-    title: "Status Document II",
-    date: "18 March 2024",
-    type: "Individual Assignment",
-    id: "status-document-2"
-  }
-];
-
-const presentations = [
-  {
-    title: "Research Paper",
-    date: "4 March 2024",
-    type: "Group Assignment",
-    id: "research-paper"
+    id: "proposal-document"
   },
   {
     title: "Final Report",
-    date: "5 April 2024",
+    date: "February 2025",
     type: "Group & Individual Assignment",
     id: "final-report"
   },
   {
-    title: "Logbook",
-    date: "28th June 2024",
-    type: "Individual Assignment",
-    id: "logbook"
-  }
+    title: "Research Paper",
+    date: "March 2025",
+    type: "Group Assignment",
+    id: "research-paper"
+  },
+
+];
+
+const presentations = [
+  {
+    title: "Proposal Presentation",
+    date: "July 2024",
+    type: "Group Assignment",
+    id: "proposal-presentation"
+  },
+  {
+    title: "PP1 Presentation",
+    date: "December 2024",
+    type: "Group Assignment",
+    id: "pp1-presentation"
+  },
+  {
+    title: "PP2 Presentation",
+    date: "March 2025",
+    type: "Group Assignment",
+    id: "pp2-presentation"
+  },
+  {
+    title: "Final Presentation",
+    date: "May 2025",
+    type: "Group Assignment",
+    id: "final-presentation"
+  },
 ];
 
 export function DownloadsSection() {
