@@ -31,8 +31,8 @@ const sections = {
     description: "Core challenges and proposed solutions",
     points: [
       "How can we create an interactive blocky-based application to teach younger kids about mobile application development and make it accessible to a wider range of children by making it cross-platform?",
-      "Proposed solution framework",
-      "Expected outcomes and impact"
+      "A blocky-based application that offers an accessible and engaging platform for children to learn mobile application development. With its visual interface and drag-and-drop functionality, kids can grasp programming concepts without a complex syntax.",
+      "The blocky-based application serves as a foundation, helping them transition smoothly into text-based coding when they are ready. This enables children to learn and build apps on their own. Build interest and get them into computing."
     ]
   },
   objectives: {
@@ -104,56 +104,67 @@ export function ProjectScopeSection() {
   return (
     <section id="project-scope" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <SectionHeading 
-          title="Project Scope" 
+        <SectionHeading
+          title="Project Scope"
           subtitle="Exploring the boundaries and possibilities of our vision"
           centered
         />
-        
-        <Tabs defaultValue="literature-survey" className="mt-12">
-          <div className="bg-secondary/50 p-1 rounded-lg">
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 gap-1 bg-transparent">
-              {Object.entries(sections).map(([key, section]) => (
-                <TabsTrigger 
-                  key={key} 
-                  value={key} 
-                  className="data-[state=active]:bg-background data-[state=active]:shadow-none px-4 py-2"
-                >
-                  {section.title}
-                </TabsTrigger>
-              ))}
+        <Tabs defaultValue="literatureSurvey" className="mt-12 w-full">
+          {/* GRID LAYOUT FOR TRIGGERS */}
+          <div className="flex flex-col items-center w-full">
+            <TabsList
+              className="
+                grid grid-cols-3 grid-rows-3 gap-12 w-full max-w-4xl mx-auto bg-transparent
+              "
+            >
+              {/* Row 1 */}
+              <TabsTrigger value="literatureSurvey" className="border rounded px-4 py-2 col-start-1 row-start-1">Literature Review</TabsTrigger>
+              <TabsTrigger value="researchGap" className="border rounded px-4 py-2 col-start-2 row-start-1">Research Gap</TabsTrigger>
+              <TabsTrigger value="researchProblem" className="border rounded px-4 py-2 col-start-3 row-start-1">Research Problem and Solution</TabsTrigger>
+
+              {/* Row 2 */}
+              <TabsTrigger value="objectives" className="border rounded px-4 py-2 col-start-1 row-start-2">Research Objectives</TabsTrigger>
+              <TabsTrigger value="methodology" className="border rounded px-4 py-2 col-start-2 row-start-2">Methodology</TabsTrigger>
+              <TabsTrigger value="technologies" className="border rounded px-4 py-2 col-start-3 row-start-2">Technologies</TabsTrigger>
+
+              {/* Row 3: References centered */}
+              <div className="col-start-1 row-start-3" />
+              <TabsTrigger value="references" className="border rounded px-4 py-2 col-start-2 row-start-3">References</TabsTrigger>
+              <div className="col-start-3 row-start-3" />
             </TabsList>
           </div>
-          
-          {Object.entries(sections).map(([key, section]) => (
-            <TabsContent key={key} value={key} className="mt-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Card>
-                  <CardHeader className="pb-3">
-                    <div className="bg-secondary rounded-full w-10 h-10 flex items-center justify-center mb-3">
-                      {section.icon}
-                    </div>
-                    <CardTitle>{section.title}</CardTitle>
-                    <CardDescription>{section.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
-                      {section.points.map((point, index) => (
-                        <li key={index} className="flex items-start">
-                          <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            </TabsContent>
-          ))}
+          {/* TAB CONTENTS (always below the full TabsList/grid) */}
+          <div className="mt-24 w-full max-w-4xl mx-auto">
+            {Object.entries(sections).map(([key, section]) => (
+              <TabsContent key={key} value={key}>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="text-xl flex items-center">
+                        {section.icon}
+                        <span className="ml-2">{section.title}</span>
+                      </CardTitle>
+                      <CardDescription>{section.description}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2">
+                        {section.points.map((point, i) => (
+                          <li key={i} className="flex items-start">
+                            <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              </TabsContent>
+            ))}
+          </div>
         </Tabs>
       </div>
     </section>

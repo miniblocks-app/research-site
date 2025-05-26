@@ -111,8 +111,8 @@ export function Header() {
       )}
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="#home" className="font-bold text-xl">
-          Project
+        <Link href="#home" className="flex items-center">
+          <img src="/miniblocks logo.png" alt="Project Logo" className="h-8 w-auto" />
         </Link>
         
         {/* Desktop Navigation */}
